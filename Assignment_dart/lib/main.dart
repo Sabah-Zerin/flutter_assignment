@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: ProductDetailsScreen(),
-
     );
   }
 }
@@ -19,7 +18,8 @@ class ProductDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BATA'),
+        title:
+            Text('BATA Zerin nowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww'),
         centerTitle: true,
         toolbarOpacity: 1,
         toolbarHeight: 100,
@@ -31,8 +31,8 @@ class ProductDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('assets/images/shoe.png',
-
+            Image.asset(
+              'assets/images/shoe.png',
               height: 400,
               width: 400,
               fit: BoxFit.cover,
@@ -47,7 +47,7 @@ class ProductDetailsScreen extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'Pirce: 1,750.00TK',
+              'Pirce: 11111111,750.00TK',
               style: TextStyle(fontSize: 16),
               textAlign: TextAlign.center,
             ),
@@ -63,7 +63,6 @@ class ProductDetailsScreen extends StatelessWidget {
                 primary: Colors.blueGrey,
               ),
               child: Text('Buy Now'),
-
             ),
           ],
         ),
@@ -71,9 +70,6 @@ class ProductDetailsScreen extends StatelessWidget {
     );
   }
 }
-
-
-
 
 class PaymentScreen extends StatelessWidget {
   @override
@@ -101,7 +97,6 @@ class PaymentScreen extends StatelessWidget {
               optionName: 'bKash',
               optionImage: 'assets/images/bkash.png',
               onPressed: () {
-
                 showPaymentResultDialog(context, 'bKash');
               },
             ),
@@ -109,7 +104,6 @@ class PaymentScreen extends StatelessWidget {
               optionName: 'Nagad',
               optionImage: 'assets/images/nagad.png',
               onPressed: () {
-
                 showPaymentResultDialog(context, 'Nagad');
               },
             ),
@@ -175,7 +169,7 @@ class PaymentOptionCard extends StatelessWidget {
                 optionImage,
                 height: 60, // Adjust the height as needed
               ),
-              SizedBox(height: 15,width: 20),
+              SizedBox(height: 15, width: 20),
               Text(
                 optionName,
                 style: TextStyle(fontSize: 16),
